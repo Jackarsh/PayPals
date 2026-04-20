@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PayPals</title>
+    <meta name="description" content="PayPals — demo single-page frontend (HTML, CSS, JS) with neon dark theme." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container nav">
+            <a class="logo" href="#hero">
+                <svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                <span>PayPals</span>
+            </a>
+            <nav class="links" aria-label="Main Navigation">
+                <a href="#hero">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <button class="btn small outline backend-btn" data-action="view-github">Repo</button>
+            </nav>
+            <button class="hamburger" aria-label="Open menu" id="navToggle">≡</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-left">
+                    <h1>Split bills <span class="neon">effortlessly</span>.</h1>
+                    <p class="tag">PayPals — Track, split, and settle group expenses. Backend: Java Spring Boot.
+                        Frontend: HTML, CSS & vanilla JS.</p>
+                    <div class="cta-row">
+                        <a class="btn primary" href="#features">Get Started</a>
+                        <button class="btn outline backend-btn" data-action="view-groups">View Groups</button>
+                        <button class="btn glow backend-btn" data-action="add-expense">Add Expense</button>
+                    </div>
+
+                    <div class="stats">
+                        <div><strong>Demo</strong><span> • Users</span></div>
+                        <div><strong>3</strong><span> • Groups</span></div>
+                        <div><strong>12</strong><span> • Expenses</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="mockphone">
+                        <div class="mock-header">
+                            <div class="mh-left">Beach Trip</div>
+                            <div class="mh-right">Balance: <span class="neon">₹350</span></div>
+                        </div>
+                        <ul class="tx-list">
+                            <li><span class="who">Alex</span><span class="amt">+₹2000</span></li>
+                            <li><span class="who">Maya</span><span class="amt">+₹1200</span></li>
+                            <li class="you"><span class="who">You</span><span class="amt">-₹350</span></li>
+                        </ul>
+                        <div class="mock-actions">
+                            <button class="btn small backend-btn" data-action="settle-up">Settle Up</button>
+                            <button class="btn small outline backend-btn" data-action="split-equal">Split
+                                Equally</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shimmer"></div>
+        </section>
+
+        <!-- FEATURES -->
+        <section id="features" class="section features">
+            <div class="container">
+                <h2 class="section-title">Features</h2>
+                <p class="lead">Core functionality wired to the backend (Spring Boot). This demo shows UX flows and
+                    integration points.</p>
+
+                <div class="cards">
+                    <article class="card neon-card">
+                        <h3>Groups & Members</h3>
+                        <p>Create groups, add members, and manage permissions.</p>
+                        <div class="card-actions">
+                            <button class="btn outline backend-btn" data-action="view-groups">View Groups</button>
+                        </div>
+                    </article>
+
+                    <article class="card neon-card">
+                        <h3>Add Expenses</h3>
+                        <p>Add expenses with equal or custom split types.</p>
+                        <div class="card-actions">
+                            <button class="btn glow backend-btn" data-action="add-expense">Add Expense</button>
+                        </div>
+                    </article>
+
+                    <article class="card neon-card">
+                        <h3>Balances & Settlements</h3>
+                        <p>Auto-calculated balances and PayPal settlements (placeholder).</p>
+                        <div class="card-actions">
+                            <button class="btn outline backend-btn" data-action="settle-up">Settle Up</button>
+                        </div>
+                    </article>
+
+                    <article class="card neon-card">
+                        <h3>API First</h3>
+                        <p>REST endpoints (users, groups, expenses) — ready for Spring Boot integration.</p>
+                        <div class="card-actions">
+                            <button class="btn small backend-btn" data-action="api-docs">API Docs</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section about">
+            <div class="container about-grid">
+                <div class="about-left">
+                    <h2 class="section-title">About PayPals</h2>
+                    <p class="lead">A Splitwise-inspired learning project that demonstrates a full-stack approach:
+                        Spring Boot backend + vanilla frontend. The single-page demo is framework-free and built for
+                        quick demos.</p>
+                    <ul class="bullets">
+                        <li>Backend: Java, Spring Boot, JPA/Hibernate, MySQL</li>
+                        <li>Frontend: HTML, CSS (cool neon theme), JavaScript</li>
+                        <li>Build: Maven/Gradle — Deployable to Heroku / Docker / AWS</li>
+                    </ul>
+                </div>
+                <div class="about-right">
+                    <div class="panel">
+                        <h4>Developer Notes</h4>
+                        <p>Buttons are placeholders. Replace modal handlers with real fetch calls to your Spring Boot
+                            endpoints like <code>GET /api/groups</code> and <code>POST /api/expenses</code>.</p>
+                        <div class="panel-actions">
+                            <button class="btn outline backend-btn" data-action="view-github">Open Repo</button>
+                            <a class="btn primary" href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Contact & Demo</h2>
+                <p class="lead">For demo tomorrow: show the UI flows — Add Expense, View Groups, Settle Up. Use the
+                    contact form to capture messages (demo only).</p>
+
+                <form id="contactForm" class="contact-form" onsubmit="return false" aria-label="Contact form">
+                    <div class="row">
+                        <input id="name" type="text" placeholder="Your name" required />
+                        <input id="email" type="email" placeholder="you@example.com" required />
+                    </div>
+                    <textarea id="message" rows="4" placeholder="Message..." required></textarea>
+                    <div class="form-actions">
+                        <button class="btn primary" id="sendMsg">Send</button>
+                        <button class="btn outline backend-btn" data-action="view-groups">Demo Groups</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>© <span id="yr"></span> PayPals</div>
+            <div class="smallish">Built with <strong>Java (backend)</strong> & <strong>HTML/CSS/JS</strong></div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-panel" role="dialog" aria-modal="true">
+            <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+            <div id="modalContent" class="modal-content"></div>
+            <div class="modal-actions">
+                <button class="btn primary" id="modalOk">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+PayPals/
+│
+├── backend/
+│ ├── src/
+│ │ ├── main/
+│ │ │ ├── java/com/paypals/
+│ │ │ │ ├── controller/
+│ │ │ │ │ ├── UserController.java
+│ │ │ │ │ ├── GroupController.java
+│ │ │ │ │ ├── ExpenseController.java
+│ │ │ │ │ ├── BalanceController.java
+│ │ │ │ │ └── ActivityController.java
+│ │ │ │ ├── model/
+│ │ │ │ │ ├── User.java
+│ │ │ │ │ ├── Group.java
+│ │ │ │ │ ├── Expense.java
+│ │ │ │ │ └── Activity.java
+│ │ │ │ ├── repository/
+│ │ │ │ │ ├── UserRepository.java
+│ │ │ │ │ ├── GroupRepository.java
+│ │ │ │ │ ├── ExpenseRepository.java
+│ │ │ │ │ └── ActivityRepository.java
+│ │ │ │ ├── service/
+│ │ │ │ │ ├── BalanceService.java
+│ │ │ │ │ └── ExpenseService.java
+│ │ │ │ └── PayPalsApplication.java
+│ │ │ └── resources/
+│ │ │ ├── application.properties
+│ │ │ └── data.sql (optional seed)
+│ │ └── test/
+│ ├── pom.xml
+│ └── README.md
+│
+├── frontend/
+│ ├── public/
+│ │ └── index.html
+│ ├── src/
+│ │ ├── api.js
+│ │ ├── App.js
+│ │ ├── index.js
+│ │ ├── components/
+│ │ │ ├── Navbar.jsx
+│ │ │ ├── Home.jsx
+│ │ │ ├── Users.jsx
+│ │ │ ├── Groups.jsx
+│ │ │ ├── Expenses.jsx
+│ │ │ ├── Balances.jsx
+│ │ │ ├── Optimized.jsx
+│ │ │ └── Activity.jsx
+│ │ └── styles/
+│ │ ├── App.css
+│ │ ├── Navbar.css
+│ │ ├── NeonUI.css
+│ │ └── Components.css
+│ ├── package.json
+│ └── README.md
+│
+├── docs/
+│ ├── PayPals_Project_Report.docx
+│ ├── PayPals_PPT.pptx
+│ └── Screenshots/
+│
+├── README.md
+├── LICENSE
+└── .gitignore

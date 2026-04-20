@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PayPals — Features</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="logo" href="index.html">
+                <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                <span>PayPals</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="features.html">Features</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-title">
+            <h1>Features</h1>
+            <p class="lead">Core functionality implemented in the backend (Java Spring Boot). Frontend here demonstrates
+                UX & integration points.</p>
+        </section>
+
+        <section class="features-grid">
+            <div class="feature-card">
+                <h3>Users & Authentication</h3>
+                <p>Register, login, and manage user profiles. (Spring Security / JWT integration placeholder)</p>
+                <div class="card-actions">
+                    <button class="btn outline backend-btn" data-action="register">Register</button>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <h3>Groups</h3>
+                <p>Create groups, add members, and view group summaries.</p>
+                <div class="card-actions">
+                    <button class="btn backend-btn" data-action="view-groups">View Groups</button>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <h3>Expenses</h3>
+                <p>Add, edit, delete expenses and choose split types (equal, custom).</p>
+                <div class="card-actions">
+                    <button class="btn backend-btn" data-action="add-expense">Add Expense</button>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <h3>Balances & Settlements</h3>
+                <p>Automatically calculate balances between users and settle using external payment providers (PayPal
+                    integration placeholder).</p>
+                <div class="card-actions">
+                    <button class="btn outline backend-btn" data-action="settle-up">Settle Up</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>© <span id="year2"></span> PayPals</div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-panel" role="dialog" aria-modal="true">
+            <button class="modal-close" id="modalCloseFeatures" aria-label="Close modal">&times;</button>
+            <div id="modalContentFeatures" class="modal-content"></div>
+            <div class="modal-actions">
+                <button class="btn primary" id="modalOkFeatures">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

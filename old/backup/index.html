@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PayPals — Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description"
+        content="PayPals — Split bills easily. Java Spring Boot backend. Frontend: HTML, CSS, JS." />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="logo" href="index.html">
+                <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                <span>PayPals</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-left">
+                <h1>Split bills <strong>effortlessly</strong>.</h1>
+                <p class="lead">Track, share, and settle expenses with friends and roommates. Backend powered by Java
+                    Spring Boot — this front-end is built with plain HTML, CSS & JavaScript.</p>
+                <div class="hero-cta">
+                    <a class="btn primary" href="features.html">Get Started</a>
+                    <button class="btn outline backend-btn" data-action="view-groups">View Groups</button>
+                </div>
+                <div class="quick-stats">
+                    <div><strong>Users</strong><span>— demo</span></div>
+                    <div><strong>Groups</strong><span>— demo</span></div>
+                    <div><strong>Expenses</strong><span>— demo</span></div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="card mock-app">
+                    <div class="mock-top">
+                        <div class="dot green"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot red"></div>
+                    </div>
+                    <div class="mock-body">
+                        <h3>Group: Beach Trip</h3>
+                        <ul class="mock-list">
+                            <li>Alex paid ₹2,000 — split: ₹500 each</li>
+                            <li>Maya paid ₹1,200 — split: ₹300 each</li>
+                            <li>You owe ₹350</li>
+                        </ul>
+                        <div class="mock-actions">
+                            <button class="btn small backend-btn" data-action="add-expense">Add Expense</button>
+                            <button class="btn small outline backend-btn" data-action="settle-up">Settle Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mini-features container">
+            <article>
+                <h4>Automatic Splits</h4>
+                <p>Smart splitting logic for equal and custom shares.</p>
+            </article>
+            <article>
+                <h4>Group Balances</h4>
+                <p>Clear per-group balances so you always know who owes what.</p>
+            </article>
+            <article>
+                <h4>PayPal Settlements</h4>
+                <p>Option to settle using PayPal (integration placeholder).</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>© <span id="year"></span> PayPals</div>
+            <div class="footer-links">
+                <a href="features.html">Features</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal placeholder -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-panel" role="dialog" aria-modal="true">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+            <div id="modalContent" class="modal-content"></div>
+            <div class="modal-actions">
+                <button class="btn primary" id="modalOk">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

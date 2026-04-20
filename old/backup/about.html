@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PayPals — About</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="logo" href="index.html">
+                <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                <span>PayPals</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-title">
+            <h1>About PayPals</h1>
+            <p class="lead">PayPals is a Splitwise-inspired project built as a learning & portfolio application.</p>
+        </section>
+
+        <section class="about-grid">
+            <div>
+                <h3>Project Purpose</h3>
+                <p>To demonstrate a full-stack approach: backend implemented with Java Spring Boot (REST APIs,
+                    JPA/Hibernate, MySQL) and frontend using only HTML, CSS & vanilla JavaScript for a polished demo UI.
+                </p>
+            </div>
+            <div>
+                <h3>Key Technologies</h3>
+                <ul>
+                    <li>Java (JDK 17+)</li>
+                    <li>Spring Boot (REST, DI)</li>
+                    <li>MySQL</li>
+                    <li>Hibernate / JPA</li>
+                    <li>HTML / CSS / JavaScript (this frontend)</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Developer Notes</h3>
+                <p>This frontend is intentionally framework-free to show core web skills and integration points. Backend
+                    endpoints should map to the dummy actions shown on the UI.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>© <span id="year3"></span> PayPals</div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
