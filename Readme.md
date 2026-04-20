@@ -1,4 +1,4 @@
-# PayPals (Full-stack demo)
+# PayPals
 
 Backend: Spring Boot (Java 17) + MySQL
 Frontend: React (create-react-app) + axios
